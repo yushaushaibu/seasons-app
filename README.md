@@ -30,16 +30,20 @@ A JS object that describes an app.
 - Component re-renders when 'state' is updated.
 - State can ONLY be updated using `setState()`
 
-`To Initialise State`
-- Call the `constructor(props)`
-- Call the `super(props)`
-- Initialise state ---> `this.state = {}`;
-
 `The 3 State Processes`
 1. Initialise State ---> `state = {}`;
 2. Update State     ---> `setState({})`;
 3. Render State     ---> `render()`
 
+`To Initialise State`
+- Call the `constructor(props)`
+- Call the `super(props)`
+- Initialise state ---> `this.state = {}`;
+
 Component is re-rendered when state is updated.
+
+`Rendering Contents Dynamically`
+Display page's contents based on condition.
+Conditional returns of some JSX.
 
 
