@@ -1,13 +1,12 @@
 import React, { Component } from "react";
-import SeasonDisplay from "./SeasonDisplay";
 
 class App extends Component {
   render() {
-    return (
-      <div>
-        <SeasonDisplay />
-      </div>
+    navigator.geolocation.getCurrentPosition(
+      (position) => console.log(position),
+      (err) => console.log(err)
     );
+    return <div>Latitude: </div>;
   }
 }
 
