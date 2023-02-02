@@ -1,5 +1,5 @@
 `Seasons App`
-An app that displays the seasons according to the month and region.
+displays the seasons according to the month and region.
 
 `Component`
 is a function or class that generates HTML-like syntax (JSX) to display to the user and handles user input using `event handlers`.
@@ -42,8 +42,20 @@ A JS object that describes an app.
 
 Component is re-rendered when state is updated.
 
+`Alternative way of intialising state`
+state = {}
+
 `Rendering Contents Dynamically`
-Display page's contents based on condition.
+display page's contents based on condition.
 Conditional returns of some JSX.
+
+`Lifecycle Methods` are functions that are automatically called at discrete time during the components lifecycle.
+
+`Component Lifecycle`
+1. `constructor()` for state initialisation.
+2. `render()` returns jsx content to show on screen.
+3. `componentDidMount()` automatically called anytime content is shown on webpage. For making data loading (http requests). It is called once.
+4. `componentDidUpdate()` returns true to allow update or false to block updates. For for making data loading (http requests) anytime the component updates.
+5. `getDerivedStateFromProps(props, state)` sync state when props changes. (rarely used)
 
 
