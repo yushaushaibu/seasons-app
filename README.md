@@ -42,8 +42,10 @@ A JS object that describes an app.
 
 Component is re-rendered when state is updated.
 
-`Alternative way of intialising state`
-state = {}
+`Alternative Way of Initialising a State`
+class App extends React.Component {
+    state = {};
+}
 
 `Rendering Contents Dynamically`
 display page's contents based on condition.
