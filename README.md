@@ -60,4 +60,5 @@ Conditional returns of some JSX.
 4. `componentDidUpdate()` returns true to allow update or false to block updates. For for making data loading (http requests) anytime the component updates.
 5. `getDerivedStateFromProps(props, state)` sync state when props changes. (rarely used)
 
+`defaultProps` provides default properties to props in a component.
 

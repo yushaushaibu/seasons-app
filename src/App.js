@@ -7,9 +7,9 @@ class App extends Component {
 
   componentDidMount() {
     navigator.geolocation.getCurrentPosition(
-        position => this.setState({ lat: position.coords.latitude }),
-        err => this.setState({ errorMsg: err.message })
-    )
+      (position) => this.setState({ lat: position.coords.latitude }),
+      (err) => this.setState({ errorMsg: err.message })
+    );
   }
 
   render() {
@@ -18,10 +18,10 @@ class App extends Component {
     }
 
     if (this.state.lat && !this.state.errorMsg) {
-      return <SeasonDisplay lat={this.state.lat}/>
+      return <SeasonDisplay lat={this.state.lat} />;
     }
 
-    return <Spinner />;
+    return <Spinner message="Awaiting location request permission" />;
   }
 }
 
