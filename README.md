@@ -62,3 +62,5 @@ Conditional returns of some JSX.
 
 `defaultProps` provides default properties to props in a component.
 
+Avoid conditionals in render(). Create a helper function, put the conditional logic in it and place the helper function in the render().
+

@@ -12,7 +12,7 @@ class App extends Component {
     );
   }
 
-  render() {
+  showContent() {
     if (!this.state.lat && this.state.errorMsg) {
       return <div>Error: {this.state.errorMsg}</div>;
     }
@@ -22,6 +22,10 @@ class App extends Component {
     }
 
     return <Spinner message="Awaiting location request permission" />;
+  }
+
+  render() {
+    return <div>{this.showContent()}</div>;
   }
 }
 
